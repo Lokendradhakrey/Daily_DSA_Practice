@@ -1,4 +1,4 @@
-package july_18_recursion;
+package day1;
 
 // Check if the string is palindrome or not.
 

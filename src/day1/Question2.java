@@ -1,8 +1,7 @@
-package july_18_recursion;
+package day1;
 
 // The task is to reverse an array and print it.
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Question2 {
