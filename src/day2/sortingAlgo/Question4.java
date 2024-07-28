@@ -1,28 +1,27 @@
 package day2.sortingAlgo;
 
-// Bubble sort algorithm
+// Given an integer array nums,
+// move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 import java.util.Arrays;
 
-public class Question1 {
+public class Question4 {
     public static void main(String[] args) {
-        int[] nums = {3, 6, 3, 6, 7, 8, 0};
-        bubbleSort(nums);
+        int[] nums = {3, 0, 0, 2, 8, 0};
+        sort(nums);
         System.out.println(Arrays.toString(nums));
     }
 
-    static void bubbleSort(int[] nums) {
+    static void sort(int[] nums) {
+
         for (int i = 0; i < nums.length; i++) {
-            boolean flag = false;
             for (int j = 1; j < nums.length - i; j++) {
-                if (nums[j - 1] > nums[j]) {
+                if (nums[j - 1] == 0 && nums[j] != 0) {
                     int temp = nums[j - 1];
                     nums[j - 1] = nums[j];
                     nums[j] = temp;
-                    flag = true;
                 }
             }
-            if (!flag) return;
         }
     }
 }
