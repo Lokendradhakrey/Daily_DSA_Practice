@@ -1,4 +1,4 @@
-package day2.sortingAlgo;
+package day2;
 
 // Insertion sort algorithm
 

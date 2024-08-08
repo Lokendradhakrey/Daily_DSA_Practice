@@ -1,4 +1,4 @@
-package day2.sortingAlgo;
+package day2;
 
 // Given an array of names of the fruits,
 // you are supposed to sort it in lexicographical order using the selection sort.
